@@ -16,12 +16,13 @@ service:
 
 https://notebooks.azure.com/library/CUED-IA-Computing-Michaelmas
 
-On the Azure service, notebooks can be executed and modified.
+On the Azure service, notebooks can be executed and modified.  The
+notebooks are developed using Python 3.
 
 
 # Feedback and corrections
 
-Please report any suggestions or errors at
+Please report suggestions or errors at:
 
 https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas/issues
 
@@ -33,8 +34,8 @@ These notebooks are developed by Garth N. Wells (<gnw20@cam.ac.uk>).
 
 # Acknowledgements
 
-Valuable feedback during the development of the notebooks was provides
-by Quang T. Ha, Hugo Hadfield, Tim Love, Chris Richardson, and Joanna
+Valuable feedback during the development of the notebooks was provided
+by Quang T. Ha, Hugo Hadfield, Tim Love, Chris Richardson and Joanna
 Stadnik.
 
 
