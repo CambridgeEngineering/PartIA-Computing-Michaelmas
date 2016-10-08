@@ -11,12 +11,15 @@ The notebooks can be viewed at:
 
 http://nbviewer.jupyter.org/github/CambridgeEngineering/PartIA-Computing-Michaelmas/tree/master/
 
+Start with the notebook [Part IA Michaelmas Term computing.ipynb](00
+Part IA Michaelmas Term computing.ipynb).
+
 Copies of the notebooks are posted to the Microsoft Azure cloud
 service:
 
 https://notebooks.azure.com/library/CUED-IA-Computing-Michaelmas
 
-On the Azure service, notebooks can be executed and modified.  The
+On the Azure service, notebooks can be executed and modified. The
 notebooks are developed using Python 3.
 
 
@@ -41,7 +44,7 @@ Stadnik.
 
 # License and copyright
 
-All material os copyright of Garth N. Wells (<gnw20@cam.ac.uk>).
+All material is copyright of Garth N. Wells (<gnw20@cam.ac.uk>).
 
 All text is made available under the Creative Commons
 Attribution-ShareAlike 4.0 International Public License
