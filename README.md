@@ -11,8 +11,7 @@ The notebooks can be viewed at:
 
 http://nbviewer.jupyter.org/github/CambridgeEngineering/PartIA-Computing-Michaelmas/tree/master/
 
-Start with the notebook [Part IA Michaelmas Term computing.ipynb](00
-Part IA Michaelmas Term computing.ipynb).
+Start with the notebook [Part IA Michaelmas Term computing](00 Part IA Michaelmas Term computing.ipynb).
 
 Copies of the notebooks are posted to the Microsoft Azure cloud
 service:
