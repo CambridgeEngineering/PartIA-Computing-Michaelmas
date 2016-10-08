@@ -4,23 +4,15 @@ This repository contains the Jupyter notebook activities for Part IA
 of the computing course (Michaelmas Term) in the Engineering Tripos at
 University of Cambridge.
 
-The course structure is outlined in the *00 Part IA Michaelmas Term
-computing* notebook.
 
-
-# Viewing and executing
+# Viewing and running
 
 Copies of these notebooks are posted to the Microsoft Azure cloud
 service:
 
 https://notebooks.azure.com/library/CUED-IA-Computing-Michaelmas
 
-Start with the notebook *00 Part IA Michaelmas Term computing*.  On
-the Azure service, notebooks can be executed and modified.
-
-The notebooks can also be viewed at:
-
-http://nbviewer.jupyter.org/github/CambridgeEngineering/PartIA-Computing-Michaelmas/tree/master/
+It is recommended that you use these notebooks via the above link.
 
 
 # Feedback and corrections
