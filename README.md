@@ -26,7 +26,7 @@ Each notebook covers a topic, with a number of exercises for
 completion at the end of each notebook. Start with the notebook
 [Part IA Michaelmas Term computing](00 Part IA Michaelmas Term
 computing.ipynb). Model solutions to the exercises are available -
-contact [Garth N. Wells](<gnw20@cam.ac.uk>] to request the solutions.
+contact [Garth N. Wells](<gnw20@cam.ac.uk>) to request the solutions.
 
 Cambridge students/staff: When prompted to sign in to the Azure
 notebook service, use your University of Cambridge email address,
@@ -39,7 +39,7 @@ notebooks interactively.
 ## Accompanying exercises
 
 For each notebook there are a set of exercises in the directory
-[Exercises](Exercises).
+[Exercises](./Exercises/).
 
 
 ## Feedback and corrections
