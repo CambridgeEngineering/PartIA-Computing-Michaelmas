@@ -1,40 +1,51 @@
-# Part IA Computing (Michaelmas Term)
+# Introduction to computing with Python for engineering and scientific applications
 
-This repository contains the Jupyter notebook activities for Part IA
-of the computing course (Michaelmas Term) in the Engineering Tripos at
-University of Cambridge.
+These Jupyter notebooks provide a self-study introduction to computing
+with Python. They have been developed for the computing course in Part
+IA (Michaelmas Term) of the Engineering Tripos at University of
+Cambridge. This is a first computing course for undergraduate
+students.
+
+The notebooks can be freely used and reproduced. See the copyright and
+license notice below.
 
 
-# Viewing and running
+## Viewing and running
 
 Copies of these notebooks are posted to the Microsoft Azure cloud
 service:
 
-https://notebooks.azure.com/library/CUED-IA-Computing-Michaelmas
+https://notebooks.azure.com/garth-wells/libraries/CUED-IA-Computing-Michaelmas
 
 It is recommended that you use these notebooks via the above link.
 
 
-# Feedback and corrections
+## Accompanying exercises
+
+For each notebook there are a set of exercises in the directory
+[Exercises](Exercises).
+
+
+## Feedback and corrections
 
 Please report suggestions or errors at:
 
 https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas/issues
 
 
-# Author
+## Author
 
 These notebooks are developed by Garth N. Wells (<gnw20@cam.ac.uk>).
 
 
-# Acknowledgements
+## Acknowledgements
 
 Valuable feedback during the development of the notebooks was provided
 by Quang T. Ha, Hugo Hadfield, Tim Love, Chris Richardson and Joanna
 Stadnik.
 
 
-# License and copyright
+## License and copyright
 
 All material is copyright of Garth N. Wells (<gnw20@cam.ac.uk>).
 
@@ -45,7 +56,7 @@ Attribution-ShareAlike 4.0 International Public License
 All computer code is released under the MIT license.
 
 The MIT License (MIT)
-Copyright (c) 2016 Garth N. Wells
+Copyright (c) 2016-2017 Garth N. Wells
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
