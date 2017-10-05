@@ -39,11 +39,14 @@ notebooks interactively.
 ## Accompanying exercises
 
 For each notebook there are a set of exercises in the directory
-[Exercises](./Exercises/).
+[Exercises](./Exercises/) for completion at end the of each Activity
+notebook.
 
 
 ## Feedback and corrections
 
+These notebooks are maintained at
+https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas.
 Please report suggestions or errors at:
 
 https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas/issues
