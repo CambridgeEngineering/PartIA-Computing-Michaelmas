@@ -1,5 +1,13 @@
 # Exercise notebooks for the Part IA (Michaelmas) computing course
 
+The exercise notebooks are designed to be completed at the end
+of each Activity notebooks.
+
+The exercise notebooks are developed using
+[nbgrader](http://nbgrader.readthedocs.io/). For most exercises there
+are tests to guide the student as to whether or not their
+implementation functions correctly.
+
 Solutions will be made available at the conclusion of the course.
 
 ## Copyright and licenses
