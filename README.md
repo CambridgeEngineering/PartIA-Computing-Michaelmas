@@ -6,8 +6,8 @@ IA (Michaelmas Term) of the Engineering Tripos at University of
 Cambridge. This is a first computing course for undergraduate
 students.
 
-The notebooks can be freely used and reproduced. See the copyright and
-license notice below.
+The notebooks can be freely used, shared and modified. See the
+copyright and license notice below.
 
 
 ## Viewing and running
