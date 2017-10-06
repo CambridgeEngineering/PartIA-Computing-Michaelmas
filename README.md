@@ -12,12 +12,16 @@ copyright and license notice below.
 
 ## Viewing and running
 
-Copies of these notebooks are posted to the Microsoft Azure cloud
+Copies of the notebooks are hosted on the Microsoft Azure cloud
 service:
 
 https://notebooks.azure.com/garth-wells/libraries/CUED-IA-Computing-Michaelmas
 
-It is recommended that you use these notebooks via the above link.
+It is recommended that you use the notebooks via the above link.
+
+Note that when 'viewing' the rendered notebooks on the Azure service
+there may be some display artefacts. For the best experience, 'clone'
+the library to use the notebooks in a Jupyter environment.
 
 
 ## Getting started
