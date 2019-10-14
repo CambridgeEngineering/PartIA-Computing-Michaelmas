@@ -3,17 +3,15 @@
 These Jupyter notebooks provide a self-study introduction to computing
 with Python. They have been developed for the computing course in Part
 IA (Michaelmas Term) of the Engineering Tripos at University of
-Cambridge. This is a first computing course for undergraduate
-students.
+Cambridge. This is a first computing course for undergraduate students.
 
-The notebooks can be freely used, shared and modified. See the
-copyright and license notice below.
+The notebooks can be freely used, shared and modified. See the copyright
+and license notice below.
 
 
 ## Viewing and running
 
-Copies of the notebooks are hosted on the Microsoft Azure cloud
-service:
+Copies of the notebooks are hosted on the Microsoft Azure cloud service:
 
 https://notebooks.azure.com/garth-wells/libraries/CUED-IA-Computing-Michaelmas
 
@@ -26,11 +24,11 @@ the library to use the notebooks in a Jupyter environment.
 
 ## Getting started
 
-Each notebook covers a topic, with a number of exercises for
-completion at the end of each notebook. Start with the notebook
-[Part IA Michaelmas Term computing](00 Part IA Michaelmas Term
-computing.ipynb). Model solutions to the exercises are available -
-contact [Garth N. Wells](<gnw20@cam.ac.uk>) to request the solutions.
+Each notebook covers a topic, with a number of exercises for completion
+at the end of each notebook. Start with the notebook [Part IA Michaelmas
+Term computing](00%20Part%20IA%20Michaelmas%20Term%20computing.ipynb). Model
+solutions to the exercises are available - contact [Garth N.
+Wells](<gnw20@cam.ac.uk>) to request the solutions.
 
 Cambridge students/staff: When prompted to sign in to the Azure
 notebook service, use your University of Cambridge email address,
@@ -79,7 +77,7 @@ Attribution-ShareAlike 4.0 International Public License
 All computer code is released under the MIT license.
 
 The MIT License (MIT)
-Copyright (c) 2016-2017 Garth N. Wells
+Copyright (c) 2016-2019 Garth N. Wells
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
