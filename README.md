@@ -11,11 +11,7 @@ and license notice below.
 
 ## Viewing and running
 
-The notebooks can be run at
-
-https://colab.research.google.com/github/CambridgeEngineering/PartIA-Computing-Michaelmas
-
-It is recommended that you use the notebooks via the above link.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CambridgeEngineering/PartIA-Computing-Michaelmas)
 
 
 ## Getting started
