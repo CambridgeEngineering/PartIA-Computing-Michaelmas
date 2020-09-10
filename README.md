@@ -45,14 +45,16 @@ https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas/issues
 
 ## Author
 
-These notebooks are developed by Garth N. Wells (<gnw20@cam.ac.uk>).
+These notebooks are developed by Garth N. Wells (@garth-wells,
+<gnw20@cam.ac.uk>).
 
 
 ## Acknowledgements
 
 Valuable feedback during the development of the notebooks was provided
-by Quang T. Ha, Hugo Hadfield, Tim Love, Chris Richardson and Joanna
-Stadnik.
+by Quang T. Ha (@quang-ha), Hugo Hadfield (@hugohadfield), Tim Love
+(@TimLoveCambridge), Chris Richardson (@chrisrichardson)and Joanna
+Stadnik (@jstadnik).
 
 
 ## License and copyright
