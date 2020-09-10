@@ -13,6 +13,7 @@ and license notice below.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CambridgeEngineering/PartIA-Computing-Michaelmas)
 
+Cambridge users should use their University credentials (CRSid) to log in.
 
 ## Getting started
 
@@ -52,9 +53,8 @@ These notebooks are developed by Garth N. Wells (@garth-wells,
 ## Acknowledgements
 
 Valuable feedback during the development of the notebooks was provided
-by Quang T. Ha (@quang-ha), Hugo Hadfield (@hugohadfield), Tim Love
-(@TimLoveCambridge), Chris Richardson (@chrisrichardson)and Joanna
-Stadnik (@jstadnik).
+by Quang T. Ha, Hugo Hadfield, Tim Love, Chris Richardson and Joanna
+Stadnik.
 
 
 ## License and copyright
