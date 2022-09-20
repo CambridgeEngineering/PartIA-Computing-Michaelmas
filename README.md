@@ -68,7 +68,7 @@ Attribution-ShareAlike 4.0 International Public License
 All computer code is released under the MIT license.
 
 The MIT License (MIT)
-Copyright (c) 2016-2019 Garth N. Wells
+Copyright (c) 2016-2022 Garth N. Wells
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
