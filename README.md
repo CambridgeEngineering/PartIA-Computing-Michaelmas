@@ -20,8 +20,7 @@ Cambridge users should use their University credentials (CRSid) to log in.
 Each notebook covers a topic, with a number of exercises for completion
 at the end of each notebook. Start with the notebook [Part IA Michaelmas
 Term computing](00%20Part%20IA%20Michaelmas%20Term%20computing.ipynb). Model
-solutions to the exercises are available - contact [Garth N.
-Wells](<gnw20@cam.ac.uk>) to request the solutions.
+solutions to the exercises are available - contact [Flavia Mancini](<fm456@cam.ac.uk>) to request the solutions.
 
 Cambridge students/staff: When prompted to sign in to the Google
 Colaboratory service, use your University of Cambridge email address,
@@ -46,8 +45,7 @@ https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas/issues
 
 ## Author
 
-These notebooks are developed by Garth N. Wells (@garth-wells,
-<gnw20@cam.ac.uk>).
+These notebooks were developed by Garth N. Wells.
 
 
 ## Acknowledgements
