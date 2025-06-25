@@ -8,23 +8,134 @@ Cambridge. This is a first computing course for undergraduate students.
 The notebooks can be freely used, shared and modified. See the copyright
 and license notice below.
 
+## Getting Set Up
 
-## Viewing and running
+### Pre-requisite - Python
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CambridgeEngineering/PartIA-Computing-Michaelmas)
+There are many ways to install Python.  Below we provide one possible method.
 
-Cambridge users should use their University credentials (CRSid) to log in.
+In the DPO:
+- Boot into linux.  It's set up and ready to go!
 
-## Getting started
+Ubuntu:
+- It’s fairly likely you will already have Python installed, but it might only have the command python3 available.  In order to allow python3 venv’s and alias python to python3, a full set of packages to install might be: ```sudo apt install python3 python3-venv python-is-python3```
+
+MacOS:
+- Install Homebrew: https://brew.sh/
+- Run:
+    ```brew install python```
+
+Windows:
+- We recommend using Anaconda on Windows to manage your development installation.  Please follow the instructions here: https://www.anaconda.com/docs/getting-started/anaconda/install#windows-installation
+- Update Anaconda Navigator
+- Launch Anaconda Navigator
+    - Environment -> Base (root) -> Play
+    - This should load a terminal starting with (base)
+
+### Pre-requisite - Git
+
+In the DPO:
+- Boot into linux.  It's set up and ready to go!
+
+Ubuntu:
+- Already installed by default from Ubuntu 24.04
+
+MacOs:
+- (Requires Homebrew, see above.)  Run:
+    ```brew install git```
+
+Windows:
+ - (Requires Anaconda, see above.)  In a terminal, run:
+    ```conda install -c anaconda git```
+
+### Setting up Git
+
+You will need to use git to obtain the relevant notebooks.  You will use git very often going forwards, this is a good time to learn how to use it!  For this course, get into the habit of saving your notebook and _pushing_ the change.
+
+Make an account on [GitHub](https://github.com/), perhaps using your CRSid as a username.
+
+You may wish to consider using SSH Keys to allow for easy command line access to GitHub, see: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+Read and boomark this basic introduction to git: https://rogerdudler.github.io/git-guide/
+
+### Get the Notebooks
+
+You will need to make your own *private* copy of the notebooks, by following these instructions *once*:
+- Create a new repo and mark it *private*: https://github.com/new
+    e.g. named PartIA-Computing-Michaelmas_CSRid (replacing the CRSid with yours.)
+- Clone the code locally:
+    ```
+    git clone --bare https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas
+    ```
+- Push a copy of this repo to your private repo (replace _username_ and the repo name below, as required):
+    ```
+    cd PartIA-Computing-Michaelmas.git
+    git push --mirror https://github.com/username/PartIA-Computing-Michaelmas_CSRid
+    ```
+- Remove the original version to avoid confusion:
+    ```
+    cd ..
+    rm -rf PartIA-Computing-Michaelmas.git
+    ```
+- _Clone_ your private copy on whichever device you need it (e.g. once in the DPO and once on your laptop/college PC), as follows:
+    ```
+    git clone https://github.com/username/PartIA-Computing-Michaelmas_CSRid
+    ```
+
+
+Remember to ensure you are update with any commits before editting (putting any local, unpushed commits to the top):
+```
+git pull --rebase
+```
+
+### Python Virtual Environment
+
+A Python virtual environment, using the venv module, is a lightweight, compartmentalised Python environment with its own independent set of packages.  It can be useful in environments whereby you don’t have the ability or desire to add packages globally (e.g. where you might need root access) or for testing to check you have correctly listed your dependencies.
+
+Creating a virtual environment (once per venv instance):
+- Linux/MacOs:
+    ```
+    python -m venv /path/to/new/virtual/environment
+    ```
+
+- Windows:
+    ```
+    python -m venv C:\path\to\new\virtual\environment
+    ```
+
+Activating a virtual environment (every time you need to use the venv):
+- Linux/MacOs (bash/zsh):
+    ```
+    source /path/to/new/virtual/environment/bin/activate
+    ```
+
+- Windows (cmd.exe):
+    ```
+    C:\path\to\new\virtual\environment\Scripts\activate.bat
+    ```
+
+### Python Requirements:
+
+You will need several Python packages installed.  You can use pip to achieve this within you're virtual environment:
+```
+pip install jupyterlab matplotlib numpy python-dateutil ipywidgets scipy numba requests pytest flake8
+```
+
+### Launch Jupyter Lab
+
+Within your Python virtual environment:
+```
+jupyter-lab
+```
+
+Note the output log, it'll give you a locally hosted web address to load in your browser (it likely will open the browser for you).  Under "Notebook" click "Python 3 (ipykernel)", then from the file browser on the left, find the .ipynb file you'd like to work with.  Remember to keep saving your changes and then commit and push them to git.
+
+
+## Getting Started
 
 Each notebook covers a topic, with a number of exercises for completion
-at the end of each notebook. Start with the notebook [Part IA Michaelmas
-Term computing](00%20Part%20IA%20Michaelmas%20Term%20computing.ipynb). Model
-solutions to the exercises are available - contact [Flavia Mancini](<fm456@cam.ac.uk>) to request the solutions.
-
-Cambridge students/staff: When prompted to sign in to the Google
-Colaboratory service, use your University of Cambridge email address,
-e.g. `crsid@cam.ac.uk`.
+at the end of each notebook. Start with the notebook 00 Part IA Michaelmas
+Term computing. Model solutions to the exercises are available - contact [Flavia Mancini](<fm456@cam.ac.uk>) and [Jon Bonsor-Matthews](<jpm66@cam.ac.uk>) to request the solutions.
 
 
 ## Accompanying exercises
