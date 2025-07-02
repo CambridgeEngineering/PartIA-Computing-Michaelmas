@@ -10,6 +10,11 @@ and license notice below.
 
 ## Getting Set Up
 
+### Pre-requisite - Command Line
+
+You will need to understand how to run commands from a command line.  Please
+read [this tutorial](https://ubuntu.com/tutorials/command-line-for-beginners).
+
 ### Pre-requisite - Python
 
 There are many ways to install Python.  Below we provide one possible method.
@@ -26,11 +31,28 @@ MacOS:
     ```brew install python```
 
 Windows:
-- We recommend using Anaconda on Windows to manage your development installation.  Please follow the instructions here: https://www.anaconda.com/docs/getting-started/anaconda/install#windows-installation
-- Update Anaconda Navigator
-- Launch Anaconda Navigator
-    - Environment -> Base (root) -> Play
-    - This should load a terminal starting with (base)
+- We recommend using [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/install).
+During your future career as an engineer, you will need to be comfortable using a
+Linux/Unix style terminal.  WSL allows you to do this from a Windows installation,
+supported by Microsoft.
+- In the Windows Search bar, search for "Turn Windows feature on or off" and open it.
+- Enable the "Hyper-V", "Virtual Machine Platform" and "Windows Subsystem for Linux" boxes.
+- Click OK and restart your PC when prompted.
+- In the Windows search bad, search for ```cmd```, click “Run as administrator”
+- Click “Yes”, when it checks this is ok
+- Run:
+    ```wsl --install```
+- Follow the on screen instructions to set up a username and a password.
+- Close the Windows command terminal.
+- Launch a wsl terminal by typing ```wsl``` into the Windows search bar and run it (remember this step - you will run it everytime you need to start a new wsl terminal).
+- To install the relevant dependencies:
+    ```
+    sudo apt-get update
+    sudo apt-get install python3 python3-venv python-is-python3 python3-pip
+    ```
+    *nb* the last command will install a lot of dependencies.  Confirm by hitting return ([Y/n] means enter "y" for "yes" and "n" for "no", with "Y"=yes as the default answer.)
+
+
 
 ### Pre-requisite - Git
 
@@ -45,8 +67,7 @@ MacOs:
     ```brew install git```
 
 Windows:
- - (Requires Anaconda, see above.)  In a terminal, run:
-    ```conda install -c anaconda git```
+ - If using WSL, this will already be installed by default.
 
 ### Setting up Git
 
@@ -54,7 +75,8 @@ You will need to use git to obtain the relevant notebooks.  You will use git ver
 
 Make an account on [GitHub](https://github.com/), perhaps using your CRSid as a username.
 
-You may wish to consider using SSH Keys to allow for easy command line access to GitHub, see: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+You may wish to consider using SSH Keys to allow for easy command line access to GitHub, see: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent and https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+(Remember on Windows if using WSL, to follow the Linux instructions!)
 
 Read and boomark this basic introduction to git: https://rogerdudler.github.io/git-guide/
 
@@ -70,17 +92,29 @@ You will need to make your own *private* copy of the notebooks, by following the
 - Push a copy of this repo to your private repo (replace _username_ and the repo name below, as required):
     ```
     cd PartIA-Computing-Michaelmas.git
-    git push --mirror https://github.com/username/PartIA-Computing-Michaelmas_CSRid
     ```
+    - If you set up ssh-keys:
+        ```
+        git push --mirror git@github.com:username/PartIA-Computing-Michaelmas_CSRid
+        ```
+    - Otherwise:
+        ```
+        git push --mirror https://github.com/username/PartIA-Computing-Michaelmas_CSRid
+        ```
 - Remove the original version to avoid confusion:
     ```
     cd ..
     rm -rf PartIA-Computing-Michaelmas.git
     ```
 - _Clone_ your private copy on whichever device you need it (e.g. once in the DPO and once on your laptop/college PC), as follows:
-    ```
-    git clone https://github.com/username/PartIA-Computing-Michaelmas_CSRid
-    ```
+    - If you set up ssh-keys:
+        ```
+        git clone git@github.com:username/PartIA-Computing-Michaelmas_CSRid
+        ```
+    - Otherwise:
+        ```
+        git clone https://github.com/username/PartIA-Computing-Michaelmas_CSRid
+        ```
 
 
 Remember to ensure you are update with any commits before editting (putting any local, unpushed commits to the top):
@@ -93,26 +127,25 @@ git pull --rebase
 A Python virtual environment, using the venv module, is a lightweight, compartmentalised Python environment with its own independent set of packages.  It can be useful in environments whereby you don’t have the ability or desire to add packages globally (e.g. where you might need root access) or for testing to check you have correctly listed your dependencies.
 
 Creating a virtual environment (once per venv instance):
-- Linux/MacOs:
-    ```
-    python -m venv /path/to/new/virtual/environment
-    ```
-
-- Windows:
-    ```
-    python -m venv C:\path\to\new\virtual\environment
-    ```
+```
+python -m venv venv
+```
+*nb* The second "venv" is the name of the venv, it can be whatever you like
 
 Activating a virtual environment (every time you need to use the venv):
-- Linux/MacOs (bash/zsh):
+- WSL/Linux/MacOs (bash/zsh):
     ```
-    source /path/to/new/virtual/environment/bin/activate
+    source venv/bin/activate
     ```
+    *nb* where "venv" is the name of the venv you chose above.
 
-- Windows (cmd.exe):
+- Windows (cmd.exe - *nb* instruction to install not provided above):
     ```
-    C:\path\to\new\virtual\environment\Scripts\activate.bat
+    venv\Scripts\activate.bat
     ```
+    *nb* where "venv" is the name of the venv you chose above.
+
+Note you should see ```(venv)``` (where venv is the name you chose) to the left of your command prompt, so you know your venv has been activated.
 
 ### Python Requirements:
 
@@ -128,7 +161,9 @@ Within your Python virtual environment:
 jupyter-lab
 ```
 
-Note the output log, it'll give you a locally hosted web address to load in your browser (it likely will open the browser for you).  Under "Notebook" click "Python 3 (ipykernel)", then from the file browser on the left, find the .ipynb file you'd like to work with.  Remember to keep saving your changes and then commit and push them to git.
+Note the output log, it'll give you a locally hosted web address to load in your browser (on some systems it will open the browser for you automatically).
+
+Under "Notebook" click "Python 3 (ipykernel)", then from the file browser on the left, find the .ipynb file you'd like to work with.  Remember to keep saving your changes and then commit and push them to git.
 
 
 ## Getting Started
