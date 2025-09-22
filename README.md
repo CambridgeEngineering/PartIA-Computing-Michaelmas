@@ -36,21 +36,28 @@ During your future career as an engineer, you will need to be comfortable using 
 Linux/Unix style terminal.  WSL allows you to do this from a Windows installation,
 supported by Microsoft.
 - In the Windows Search bar, search for "Turn Windows feature on or off" and open it.
-- Enable the "Hyper-V", "Virtual Machine Platform" and "Windows Subsystem for Linux" boxes.
+- Enable the "Virtual Machine Platform" and "Windows Subsystem for Linux" (and, if present, "Hyper-V") boxes.
+![Windows Features](images/Windows_Features.png)
 - Click OK and restart your PC when prompted.
 - In the Windows search bad, search for ```cmd```, click “Run as administrator”
+![cmd](images/cmd.png)
 - Click “Yes”, when it checks this is ok
-- Run:
+- Type in, then hit return:
     ```wsl --install```
+![wsl install](images/wsl_install.png)
 - Follow the on screen instructions to set up a username and a password.
+![wsl install2](images/wsl_install2.png)
 - Close the Windows command terminal.
-- Launch a wsl terminal by typing ```wsl``` into the Windows search bar and run it (remember this step - you will run it everytime you need to start a new wsl terminal).
-- To install the relevant dependencies:
+- Launch a wsl terminal by typing ```wsl``` into the Windows search bar and run it (click "Open") (remember this step - you will run it everytime you need to start a new wsl terminal).
+![open wsl](images/open_wsl.png)
+- To install the relevant dependencies, copy/paste and hit return:
     ```
     sudo apt-get update
     sudo apt-get install python3 python3-venv python-is-python3 python3-pip
     ```
     *nb* the last command will install a lot of dependencies.  Confirm by hitting return ([Y/n] means enter "y" for "yes" and "n" for "no", with "Y"=yes as the default answer.)
+![apt install](images/apt_install.png)
+![apt update](images/apt_update.png)
 
 
 
@@ -138,8 +145,9 @@ Activating a virtual environment (every time you need to use the venv):
     source venv/bin/activate
     ```
     *nb* where "venv" is the name of the venv you chose above.
+    ![venv](images/venv.png)
 
-- Windows (cmd.exe - *nb* instruction to install not provided above):
+- Windows (cmd.exe - *nb* instruction to install *not* provided above):
     ```
     venv\Scripts\activate.bat
     ```
@@ -153,6 +161,7 @@ You will need several Python packages installed.  You can use pip to achieve thi
 ```
 pip install jupyterlab matplotlib numpy python-dateutil ipywidgets scipy numba requests pytest flake8
 ```
+![venv deps](images/venv_deps.png)
 
 ### Launch Jupyter Lab
 
@@ -160,10 +169,12 @@ Within your Python virtual environment:
 ```
 jupyter-lab
 ```
+![launch jupyter-lab](images/launch_jupyterlab.png)
 
 Note the output log, it'll give you a locally hosted web address to load in your browser (on some systems it will open the browser for you automatically).
 
-Under "Notebook" click "Python 3 (ipykernel)", then from the file browser on the left, find the .ipynb file you'd like to work with.  Remember to keep saving your changes and then commit and push them to git.
+Under "Notebook" click "Python 3 (ipykernel)", then from the file browser on the left, find the .ipynb file you'd like to work with.  Remember to keep saving your changes and then commit and push them to git ("git push" in a command line).
+![jupyter-lab loaded](images/jupyter_lab_loaded.png)
 
 
 ## Getting Started
