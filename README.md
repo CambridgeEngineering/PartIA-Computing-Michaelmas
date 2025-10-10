@@ -123,6 +123,36 @@ You will need to make your own *private* copy of the notebooks, by following the
         git clone https://github.com/username/PartIA-Computing-Michaelmas_CSRid
         ```
 
+
+### Note on HTTPS Authentication (Using Personal Access Tokens)
+
+If you are using the HTTPS method, GitHub no longer accepts your regular password.
+Instead, you need to use a **Personal Access Token (PAT)** as your password.
+
+To generate a PAT:
+
+1. Go to **Settings**:
+   ![settings](images/settings.png)
+
+2. Click **Developer settings**:
+   ![developer settings](images/developer_settings.png)
+
+3. Choose **Personal access tokens → Tokens (classic)**, then click **Generate new token (classic)**:
+   ![token create](images/token_create.png)
+
+4. Check **all items** (scopes) to grant full access:
+   ![token checklist](images/token_checklist.png)
+
+5. After creating the token, make sure to **copy it immediately** — GitHub will not show it again:
+   ![token print](images/token_print.png)
+
+When prompted for credentials during `git push`:
+
+* **Username:** your GitHub username
+* **Password:** the **Personal Access Token (PAT)** you just created
+
+
+
 ### Get to the Correct File Location
 
 Now and each time you start a new terminal, you will need to change to the directory containing your code, e.g. (changing _CSRid_):
