@@ -90,18 +90,13 @@ If you are using the HTTPS method, GitHub no longer accepts your regular passwor
 Instead, you need to use a **Personal Access Token (PAT)** as your password.
 
 To generate a PAT:
-1. Go to **Settings**:
-   ![settings](images/settings.png)
-
+1. In the upper-right corner of any page on GitHub, click your profile picture, then click  Settings.
 2. Click **Developer settings**:
    ![developer settings](images/developer_settings.png)
-
 3. Choose **Personal access tokens → Tokens (classic)**, then click **Generate new token (classic)**:
    ![token create](images/token_create.png)
-
 4. Check **all items** (scopes) to grant full access:
    ![token checklist](images/token_checklist.png)
-
 5. After creating the token, make sure to **copy it immediately** — GitHub will not show it again:
    ![token print](images/token_print.png)
 
