@@ -8,6 +8,12 @@ Cambridge. This is a first computing course for undergraduate students.
 The notebooks can be freely used, shared and modified. See the copyright
 and license notice below.
 
+## What is a Terminal?
+
+If you aren't familiar with the concept of the Command Line, please read [this tutorial](https://ubuntu.com/tutorials/command-line-for-beginners).  nb step 3 on Opening a terminal will vary if you aren't using Linux:
+* in Mac you can just open a terminal
+* in Windows, you can run "cmd" to load a default terminal until you have installed wsl (more on that below); then just run "wsl".
+
 ## Getting Set Up
 
 ### Pre-requisite - Command Line
