@@ -96,15 +96,15 @@ You will need to make your own *private* copy of the notebooks, by following the
     ```
     git clone --bare https://github.com/CambridgeEngineering/PartIA-Computing-Michaelmas
     ```
-- Push a copy of this repo to your private repo (replace _username_ and the repo name below, as required):
+- Push a copy of this repo to your private repo:
     ```
     cd PartIA-Computing-Michaelmas.git
     ```
-    - If you set up ssh-keys:
+    - If you set up ssh-keys (changing _username_ and _CSRid_):
         ```
         git push --mirror git@github.com:username/PartIA-Computing-Michaelmas_CSRid
         ```
-    - Otherwise:
+    - Otherwise (changing _username_ and _CSRid_):
         ```
         git push --mirror https://github.com/username/PartIA-Computing-Michaelmas_CSRid
         ```
@@ -114,15 +114,21 @@ You will need to make your own *private* copy of the notebooks, by following the
     rm -rf PartIA-Computing-Michaelmas.git
     ```
 - _Clone_ your private copy on whichever device you need it (e.g. once in the DPO and once on your laptop/college PC), as follows:
-    - If you set up ssh-keys:
+    - If you set up ssh-keys (changing _username_ and _CSRid_):
         ```
         git clone git@github.com:username/PartIA-Computing-Michaelmas_CSRid
         ```
-    - Otherwise:
+    - Otherwise (changing _username_ and _CSRid_):
         ```
         git clone https://github.com/username/PartIA-Computing-Michaelmas_CSRid
         ```
 
+### Get to the Correct File Location
+
+Now and each time you start a new terminal, you will need to change to the directory containing your code, e.g. (changing _CSRid_):
+```
+cd PartIA-Computing-Michaelmas_CSRid
+```
 
 Remember to ensure you are update with any commits before editting (putting any local, unpushed commits to the top):
 ```
