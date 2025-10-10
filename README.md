@@ -76,16 +76,67 @@ MacOs:
 Windows:
  - If using WSL, this will already be installed by default.
 
-### Setting up Git
+### Setting up GitHub
 
 You will need to use git to obtain the relevant notebooks.  You will use git very often going forwards, this is a good time to learn how to use it!  For this course, get into the habit of saving your notebook and _pushing_ the change.
 
 Make an account on [GitHub](https://github.com/), perhaps using your CRSid as a username.
 
-You may wish to consider using SSH Keys to allow for easy command line access to GitHub, see: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent and https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-(Remember on Windows if using WSL, to follow the Linux instructions!)
+Either use a Personal Access Token or use SSH keys (you can change your mind later).
+
+#### Option 1. Using Personal Access Tokens (HTTPS Authentication)
+
+If you are using the HTTPS method, GitHub no longer accepts your regular password.
+Instead, you need to use a **Personal Access Token (PAT)** as your password.
+
+To generate a PAT:
+1. Go to **Settings**:
+   ![settings](images/settings.png)
+
+2. Click **Developer settings**:
+   ![developer settings](images/developer_settings.png)
+
+3. Choose **Personal access tokens → Tokens (classic)**, then click **Generate new token (classic)**:
+   ![token create](images/token_create.png)
+
+4. Check **all items** (scopes) to grant full access:
+   ![token checklist](images/token_checklist.png)
+
+5. After creating the token, make sure to **copy it immediately** — GitHub will not show it again:
+   ![token print](images/token_print.png)
+
+When prompted for credentials during `git push`:
+* **Username:** your GitHub username
+* **Password:** the **Personal Access Token (PAT)** you just created
+
+#### Option 2. Use SSH Keys
+
+SSH keys allow remote, encrypted authentication directly between your machine and a server.
+
+To create and upload SSH keys:
+* Create a SSH key pair (changing the email address):
+    ```
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+    ```
+    You hit ENTER for each question - default file location and empty passphrase (unless you want one)
+* Upload the SSH *public (only)* key to GitHub:
+    * Copy the SSH public key to your clipboard, either by opening the .pub file just created above and copying the contents to the clipboard, or from the terminal:
+        ```
+        pbcopy < ~/.ssh/id_ed25519.pub
+        ```
+    * In the upper-right corner of any page on GitHub, click your profile picture, then click  Settings.
+    * In the "Access" section of the sidebar, click  SSH and GPG keys.
+    * Click New SSH key or Add SSH key.
+    * In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
+    * Set the "Key type" field to "Authentication Key".
+    * In the "Key" field, paste your public key.
+    * "Click Add SSH key"
+
+
+### About Git
 
 Read and boomark this basic introduction to git: https://rogerdudler.github.io/git-guide/
+
 
 ### Get the Notebooks
 
@@ -122,35 +173,6 @@ You will need to make your own *private* copy of the notebooks, by following the
         ```
         git clone https://github.com/username/PartIA-Computing-Michaelmas_CSRid
         ```
-
-
-### Note on HTTPS Authentication (Using Personal Access Tokens)
-
-If you are using the HTTPS method, GitHub no longer accepts your regular password.
-Instead, you need to use a **Personal Access Token (PAT)** as your password.
-
-To generate a PAT:
-
-1. Go to **Settings**:
-   ![settings](images/settings.png)
-
-2. Click **Developer settings**:
-   ![developer settings](images/developer_settings.png)
-
-3. Choose **Personal access tokens → Tokens (classic)**, then click **Generate new token (classic)**:
-   ![token create](images/token_create.png)
-
-4. Check **all items** (scopes) to grant full access:
-   ![token checklist](images/token_checklist.png)
-
-5. After creating the token, make sure to **copy it immediately** — GitHub will not show it again:
-   ![token print](images/token_print.png)
-
-When prompted for credentials during `git push`:
-
-* **Username:** your GitHub username
-* **Password:** the **Personal Access Token (PAT)** you just created
-
 
 
 ### Get to the Correct File Location
